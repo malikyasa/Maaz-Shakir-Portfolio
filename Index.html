@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAGHAZ SHAKIR | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0f2c, #1f3b73, #00ffe0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* === GLASS CONTAINER === */
+.glass-container {
+  width: 100%;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 40px;
+}
+
+/* === HEADER === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00ffe0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0;
+}
+
+/* === HERO === */
+.hero {
+  text-align: center;
+  margin: 70px 0;
+}
+.intro {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.intro span {
+  color: #00ffe0;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #4dd5ff;
+  margin-bottom: 20px;
+}
+.hero p {
+  max-width: 650px;
+  margin: 15px auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+.buttons {
+  margin-top: 25px;
+}
+.btn, .btn-outline {
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn {
+  background: linear-gradient(135deg, #00ffe0, #4dd5ff);
+  color: #0a0f2c;
+  box-shadow: 0 0 15px rgba(0, 255, 224, 0.6);
+}
+.btn:hover {
+  background: linear-gradient(135deg, #4dd5ff, #00ffe0);
+  box-shadow: 0 0 25px #00ffe0;
+  transform: scale(1.05);
+}
+.btn-outline {
+  border: 2px solid #00ffe0;
+  color: #00ffe0;
+  margin-left: 10px;
+}
+.btn-outline:hover {
+  background: rgba(0, 255, 224, 0.2);
+  box-shadow: 0 0 20px #00ffe0;
+  transform: scale(1.05);
+}
+
+/* === ABOUT === */
+.about {
+  margin-top: 90px;
+}
+.about h2 {
+  text-align: center;
+  color: #00ffe0;
+  margin-bottom: 25px;
+}
+.experience-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.experience-box h3 {
+  color: #4dd5ff;
+  margin-bottom: 10px;
+}
+.skills-table {
+  text-align: center;
+  margin-top: 30px;
+}
+.skills-table h3 {
+  color: #00ffe0;
+  margin-bottom: 10px;
+}
+.skills-table table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+.skills-table th, .skills-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.skills-table th {
+  background: rgba(0, 255, 224, 0.2);
+  color: #00ffe0;
+}
+.skills-table td {
+  color: #fff;
+}
+
+/* === WORK === */
+.work {
+  margin-top: 100px;
+}
+.work h2 {
+  text-align: center;
+  color: #00ffe0;
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.project {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 250px;
+}
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 224, 0.4);
+}
+.project h4 {
+  color: #00ffe0;
+  margin-bottom: 8px;
+}
+.project p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* === CONTACT === */
+.contact {
+  text-align: center;
+  margin-top: 100px;
+}
+.contact h2 {
+  color: #00ffe0;
+  margin-bottom: 20px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #b8faff; /* 🔹 visible bright teal placeholders */
+}
+.contact button {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #00ffe0, #4dd5ff);
+  color: #0a0f2c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  box-shadow: 0 0 20px #00ffe0;
+  transform: scale(1.05);
+}
+.contact .info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+.contact a {
+  color: #4dd5ff;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+  </style>
+
+
+</head>
+<body>
+  <div class="glass-container">
+    <header class="header">
+      <div class="logo">MS</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2 class="intro">Hello, I'm <span>MAGHAZ SHAKIR.</span></h2>
+        <h3 class="tagline">Creative & Modern Graphic & UI/UX Designer</h3>
+        <p>4 years of experience in Graphic Design and over 1 year in UI/UX Designing with multiple projects using Adobe Photoshop, Illustrator, CorelDRAW, Canva, and Figma.</p>
+        <div class="buttons">
+          <a href="#work" class="btn">View Work</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I’m <strong>MAGHAZ SHAKIR</strong>, a professional Graphic and UI/UX Designer passionate about turning ideas into beautiful and functional visuals. I work on branding, print, and digital designs that make businesses stand out.</p>
+
+      <!-- EXPERIENCE BOX -->
+      <div class="experience-box">
+        <h3>Experience</h3>
+        <p><strong>4 Years</strong> in Graphic Design and <strong>1+ Year</strong> in UI/UX Designing with multiple professional projects delivered using <strong>Adobe Photoshop, Illustrator, CorelDRAW, Canva, and Figma.</strong></p>
+      </div>
+
+      <!-- SKILLS AND TOOLS TABLE -->
+      <div class="skills-table">
+        <h3>Skills & Tools</h3>
+        <table>
+          <tr>
+            <th>Skills</th>
+            <th>Tools</th>
+          </tr>
+          <tr>
+            <td>Graphic Design</td>
+            <td>Adobe Photoshop</td>
+          </tr>
+          <tr>
+            <td>UI/UX Design</td>
+            <td>Figma</td>
+          </tr>
+          <tr>
+            <td>Branding & Logo</td>
+            <td>Illustrator</td>
+          </tr>
+          <tr>
+            <td>Creative Layouts</td>
+            <td>CorelDRAW, Canva</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h2>My Work</h2>
+      <div class="project-grid">
+
+        <div class="project">
+          <h4>CLICKIFY MARKETING APP</h4>
+          <p>Marketing app UI/UX design for digital marketing services.</p>
+          <a href="https://www.figma.com/design/wO0ceNuT9cwvUzqJsSqBDY/CLICKIFY-MARKETING-APP-DESIGNING?m=auto&t=k51jmCnsw3x1Eq0F-6" target="_blank" class="btn">View Design</a>
+        </div>
+
+        <div class="project">
+          <h4>QURAN & NAMAZ APP</h4>
+          <p>Beautiful Islamic mobile UI design for Quran and prayer tracking.</p>
+          <a href="https://www.figma.com/design/DALIHY4Qxxkb3GY1izRxYO/QURAN-NAMAZ?m=auto&t=k51jmCnsw3x1Eq0F-6" target="_blank" class="btn">View Design</a>
+        </div>
+
+        <div class="project">
+          <h4>GLASS & ALUMINUM WEBSITE</h4>
+          <p>Modern website design showcasing premium glass and aluminum services.</p>
+          <a href="https://www.figma.com/design/yLRzblubVYP2Rrr1NsRLIT/GLASS-AND-ALUMINUM-FINAL-WEB?m=auto&t=k51jmCnsw3x1Eq0F-6" target="_blank" class="btn">View Design</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Let’s collaborate or discuss your project idea!</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="info">
+        📧 <a href="mailto:maghazshakir222@gmail.com">maghazshakir222@gmail.com</a> |
+        📱 <a href="tel:+923035685735">0303-5685735</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 MAGHAZ SHAKIR — GRAPHIC & UI/UX DESIGNER</p>
+    </footer>
+  </div>
+
+  <script src="script.js">
+
+    document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Simple contact alert
+document.querySelector('form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Thank you for reaching out, your message has been sent!'); 
+  this.reset();
+});
+  </script>
+</body>
+</html>
+
+
+
+</body>
+</html>
