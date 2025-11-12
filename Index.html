@@ -275,7 +275,35 @@ nav a:hover {
 .contact a:hover {
   text-decoration: underline;
 }
+/* Recovery */
+@media(max-width:28.125rem)
+{
+    .buttons {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
 
+    
+.btn, .btn-outline {
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+  }
+  nav a{
+    margin: 0px 6px;
+  }
+}
 /* === FOOTER === */
 footer {
   text-align: center;
@@ -419,4 +447,5 @@ document.querySelector('form').addEventListener('submit', function (e) {
 </body>
 
 </html>
+
 
