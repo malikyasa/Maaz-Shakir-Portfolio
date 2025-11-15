@@ -16,7 +16,7 @@
   <title>MAGHAZ SHAKIR | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-
+ <script src="https://kit.fontawesome.com/6be16e262c.js" crossorigin="anonymous"></script>
 
 
   <style>
@@ -267,9 +267,15 @@ nav a:hover {
   margin-top: 20px;
   font-size: 1rem;
   color: #fff;
+  display:flex;
+  flex-direction: row;
+}
+.contact div{
+  display: inline-block;
+  margin-left: .625rem;
 }
 .contact a {
- color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 .contact a:hover {
@@ -302,7 +308,30 @@ nav a:hover {
   nav a{
     margin: 0px 3px;
   }
+   .contact .info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #fff;
+  display:flex;
+  flex-direction: column;
 }
+.contact div{
+  display: block
+}
+.contact{
+  text-align: center;
+}
+.contact a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+}
+
+     div i{
+  color:#00ffe0;
+}
+
 /* === FOOTER === */
 footer {
   text-align: center;
@@ -410,9 +439,15 @@ footer {
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-      <p class="info">
-        📧 <a href="mailto:maghazshakir222@gmail.com">maghazshakir222@gmail.com</a> |
-        📱 <a href="tel:+923035685735">0303-5685735</a>
+     <p class="info">
+        <div>
+          <i class="fa-solid fa-envelope "></i>
+          <a href="mailto:maghazshakir222@gmail.com">maghazshakir222@gmail.com</a> 
+        </div>
+         <div>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+923035685735">0303-5685735</a>
+         </div>
       </p>
     </section>
 
@@ -446,6 +481,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
 </body>
 
 </html>
+
 
 
 
